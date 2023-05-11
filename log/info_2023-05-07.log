@@ -1,0 +1,32 @@
+[2023-05-07 10:29:30.249] [main] INFO  com.dlu.dluBack.DluBackApplication: Starting DluBackApplication on HuangCF with PID 28428 (E:\java_project\dlu_all\dluBack\target\classes started by 86156 in E:\java_project\dluBack\dluBack)
+[2023-05-07 10:29:30.251] [main] INFO  com.dlu.dluBack.DluBackApplication: No active profile set, falling back to default profiles: default
+[2023-05-07 10:29:30.780] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode!
+[2023-05-07 10:29:30.782] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+[2023-05-07 10:29:30.810] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+[2023-05-07 10:29:31.054] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c4252329] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2023-05-07 10:29:31.251] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8003 (http)
+[2023-05-07 10:29:31.263] [main] INFO  o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8003"]
+[2023-05-07 10:29:31.270] [main] INFO  o.a.catalina.core.StandardService: Starting service [Tomcat]
+[2023-05-07 10:29:31.270] [main] INFO  o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.21]
+[2023-05-07 10:29:31.370] [main] INFO  o.a.c.c.C.[.[localhost].[/dlu]: Initializing Spring embedded WebApplicationContext
+[2023-05-07 10:29:31.370] [main] INFO  o.s.web.context.ContextLoader: Root WebApplicationContext: initialization completed in 1081 ms
+[2023-05-07 10:29:31.394] [main] INFO  o.s.b.web.servlet.RegistrationBean: Filter crossDomainFilter was not registered (possibly already registered?)
+[2023-05-07 10:29:31.408] [main] INFO  c.d.dluBack.filter.CrossDomainFilter: -----CrossDomainFilter init -------
+[2023-05-07 10:29:31.786] [main] INFO  o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+[2023-05-07 10:29:31.859] [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration: Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2023-05-07 10:29:32.186] [main] INFO  o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-8003"]
+[2023-05-07 10:29:32.204] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 8003 (http) with context path '/dlu'
+[2023-05-07 10:29:32.207] [main] INFO  com.dlu.dluBack.DluBackApplication: Started DluBackApplication in 2.288 seconds (JVM running for 3.721)
+[2023-05-07 10:29:37.857] [http-nio-8003-exec-1] INFO  o.a.c.c.C.[.[localhost].[/dlu]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-05-07 10:29:37.857] [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+[2023-05-07 10:29:37.864] [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet: Completed initialization in 7 ms
+[2023-05-07 10:29:42.234] [http-nio-8003-exec-2] INFO  com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+[2023-05-07 10:29:42.368] [http-nio-8003-exec-2] INFO  com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+[2023-05-07 10:29:42.398] [http-nio-8003-exec-2] INFO  c.d.d.controller.UserController: testlogin:2023-05-07
+[2023-05-07 11:20:06.321] [http-nio-8003-exec-9] INFO  c.d.d.controller.UserController: testlogin:2023-05-07
+[2023-05-07 11:29:40.596] [http-nio-8003-exec-4] INFO  c.d.d.controller.UserController: testlogin:2023-05-07
+[2023-05-07 14:13:30.828] [http-nio-8003-exec-1] INFO  c.d.d.controller.UserController: testlogin:2023-05-07
+[2023-05-07 15:18:13.956] [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m650ms289µs300ns).
+[2023-05-07 15:24:58.041] [http-nio-8003-exec-1] INFO  c.d.d.controller.UserController: testlogin:2023-05-07
+[2023-05-07 15:32:01.990] [http-nio-8003-exec-4] INFO  c.d.d.controller.UserController: testlogin:2023-05-07
+[2023-05-07 15:41:02.106] [http-nio-8003-exec-2] INFO  c.d.d.controller.UserController: testlogin:2023-05-07

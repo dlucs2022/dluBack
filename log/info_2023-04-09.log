@@ -1,0 +1,18 @@
+[2023-04-09 21:51:59.289] [main] INFO  com.dlu.dluBack.DluBackApplication: Starting DluBackApplication on HuangCF with PID 29708 (E:\java_project\dlu_all\dluBack\target\classes started by 86156 in E:\java_project\dluBack\dluBack)
+[2023-04-09 21:51:59.291] [main] INFO  com.dlu.dluBack.DluBackApplication: No active profile set, falling back to default profiles: default
+[2023-04-09 21:51:59.845] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8003 (http)
+[2023-04-09 21:51:59.850] [main] INFO  o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8003"]
+[2023-04-09 21:51:59.851] [main] INFO  o.a.catalina.core.StandardService: Starting service [Tomcat]
+[2023-04-09 21:51:59.851] [main] INFO  o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.33]
+[2023-04-09 21:51:59.919] [main] INFO  o.a.c.c.C.[.[localhost].[/dlu]: Initializing Spring embedded WebApplicationContext
+[2023-04-09 21:51:59.920] [main] INFO  o.s.web.context.ContextLoader: Root WebApplicationContext: initialization completed in 598 ms
+[2023-04-09 21:51:59.941] [main] INFO  o.s.b.web.servlet.RegistrationBean: Filter crossDomainFilter was not registered (possibly already registered?)
+[2023-04-09 21:51:59.951] [main] INFO  c.d.dluBack.filter.CrossDomainFilter: -----CrossDomainFilter init -------
+[2023-04-09 21:52:00.149] [main] INFO  o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+[2023-04-09 21:52:00.242] [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration: Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2023-04-09 21:52:00.299] [main] INFO  o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-8003"]
+[2023-04-09 21:52:00.311] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 8003 (http) with context path '/dlu'
+[2023-04-09 21:52:00.313] [main] INFO  com.dlu.dluBack.DluBackApplication: Started DluBackApplication in 1.22 seconds (JVM running for 1.945)
+[2023-04-09 21:52:55.555] [http-nio-8003-exec-1] INFO  o.a.c.c.C.[.[localhost].[/dlu]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-04-09 21:52:55.555] [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+[2023-04-09 21:52:55.558] [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet: Completed initialization in 3 ms

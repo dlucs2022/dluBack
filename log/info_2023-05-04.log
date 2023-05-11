@@ -1,0 +1,117 @@
+[2023-05-04 16:14:34.875] [main] INFO  com.dlu.dluBack.DluBackApplication: Starting DluBackApplication on HuangCF with PID 21296 (E:\java_project\dlu_all\dluBack\target\classes started by 86156 in E:\java_project\dluBack\dluBack)
+[2023-05-04 16:14:34.877] [main] INFO  com.dlu.dluBack.DluBackApplication: No active profile set, falling back to default profiles: default
+[2023-05-04 16:14:35.635] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8003 (http)
+[2023-05-04 16:14:35.641] [main] INFO  o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8003"]
+[2023-05-04 16:14:35.641] [main] INFO  o.a.catalina.core.StandardService: Starting service [Tomcat]
+[2023-05-04 16:14:35.642] [main] INFO  o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.33]
+[2023-05-04 16:14:35.730] [main] INFO  o.a.c.c.C.[.[localhost].[/dlu]: Initializing Spring embedded WebApplicationContext
+[2023-05-04 16:14:35.730] [main] INFO  o.s.web.context.ContextLoader: Root WebApplicationContext: initialization completed in 792 ms
+[2023-05-04 16:14:35.752] [main] INFO  o.s.b.web.servlet.RegistrationBean: Filter crossDomainFilter was not registered (possibly already registered?)
+[2023-05-04 16:14:35.765] [main] INFO  c.d.dluBack.filter.CrossDomainFilter: -----CrossDomainFilter init -------
+[2023-05-04 16:14:36.109] [main] INFO  o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+[2023-05-04 16:14:36.193] [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration: Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2023-05-04 16:14:36.273] [main] INFO  o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-8003"]
+[2023-05-04 16:14:36.294] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 8003 (http) with context path '/dlu'
+[2023-05-04 16:14:36.296] [main] INFO  com.dlu.dluBack.DluBackApplication: Started DluBackApplication in 1.817 seconds (JVM running for 3.558)
+[2023-05-04 17:00:36.790] [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+[2023-05-04 17:00:41.172] [main] INFO  com.dlu.dluBack.DluBackApplication: Starting DluBackApplication on HuangCF with PID 20256 (E:\java_project\dlu_all\dluBack\target\classes started by 86156 in E:\java_project\dluBack\dluBack)
+[2023-05-04 17:00:41.173] [main] INFO  com.dlu.dluBack.DluBackApplication: No active profile set, falling back to default profiles: default
+[2023-05-04 17:00:41.772] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8003 (http)
+[2023-05-04 17:00:41.778] [main] INFO  o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8003"]
+[2023-05-04 17:00:41.778] [main] INFO  o.a.catalina.core.StandardService: Starting service [Tomcat]
+[2023-05-04 17:00:41.778] [main] INFO  o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.33]
+[2023-05-04 17:00:41.841] [main] INFO  o.a.c.c.C.[.[localhost].[/dlu]: Initializing Spring embedded WebApplicationContext
+[2023-05-04 17:00:41.841] [main] INFO  o.s.web.context.ContextLoader: Root WebApplicationContext: initialization completed in 620 ms
+[2023-05-04 17:00:41.863] [main] INFO  o.s.b.web.servlet.RegistrationBean: Filter crossDomainFilter was not registered (possibly already registered?)
+[2023-05-04 17:00:41.874] [main] INFO  c.d.dluBack.filter.CrossDomainFilter: -----CrossDomainFilter init -------
+[2023-05-04 17:00:42.126] [main] INFO  o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+[2023-05-04 17:00:42.191] [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration: Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2023-05-04 17:00:42.257] [main] INFO  o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-8003"]
+[2023-05-04 17:00:42.271] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 8003 (http) with context path '/dlu'
+[2023-05-04 17:00:42.273] [main] INFO  com.dlu.dluBack.DluBackApplication: Started DluBackApplication in 1.345 seconds (JVM running for 2.182)
+[2023-05-04 17:02:58.345] [http-nio-8003-exec-1] INFO  o.a.c.c.C.[.[localhost].[/dlu]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-05-04 17:02:58.345] [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+[2023-05-04 17:02:58.350] [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet: Completed initialization in 5 ms
+[2023-05-04 17:03:06.758] [http-nio-8003-exec-3] INFO  com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+[2023-05-04 17:03:09.849] [http-nio-8003-exec-4] INFO  com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+[2023-05-04 17:03:36.882] [http-nio-8003-exec-5] INFO  com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+[2023-05-04 17:03:36.957] [http-nio-8003-exec-5] INFO  com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+[2023-05-04 17:03:36.992] [http-nio-8003-exec-5] INFO  c.d.d.controller.UserController: testlogin:2023-05-04
+[2023-05-04 17:03:48.654] [http-nio-8003-exec-6] INFO  o.a.coyote.http11.Http11Processor: Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:488)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:260)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2023-05-04 17:12:06.862] [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m20s193ms575µs600ns).
+[2023-05-04 17:12:06.889] [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+[2023-05-04 17:12:06.890] [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+[2023-05-04 17:12:06.911] [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+[2023-05-04 17:12:10.598] [main] INFO  com.dlu.dluBack.DluBackApplication: Starting DluBackApplication on HuangCF with PID 22876 (E:\java_project\dlu_all\dluBack\target\classes started by 86156 in E:\java_project\dluBack\dluBack)
+[2023-05-04 17:12:10.600] [main] INFO  com.dlu.dluBack.DluBackApplication: No active profile set, falling back to default profiles: default
+[2023-05-04 17:12:11.237] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8003 (http)
+[2023-05-04 17:12:11.244] [main] INFO  o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8003"]
+[2023-05-04 17:12:11.245] [main] INFO  o.a.catalina.core.StandardService: Starting service [Tomcat]
+[2023-05-04 17:12:11.245] [main] INFO  o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.33]
+[2023-05-04 17:12:11.311] [main] INFO  o.a.c.c.C.[.[localhost].[/dlu]: Initializing Spring embedded WebApplicationContext
+[2023-05-04 17:12:11.311] [main] INFO  o.s.web.context.ContextLoader: Root WebApplicationContext: initialization completed in 662 ms
+[2023-05-04 17:12:11.334] [main] INFO  o.s.b.web.servlet.RegistrationBean: Filter crossDomainFilter was not registered (possibly already registered?)
+[2023-05-04 17:12:11.344] [main] INFO  c.d.dluBack.filter.CrossDomainFilter: -----CrossDomainFilter init -------
+[2023-05-04 17:12:11.616] [main] INFO  o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+[2023-05-04 17:12:11.687] [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration: Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2023-05-04 17:12:11.753] [main] INFO  o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-8003"]
+[2023-05-04 17:12:11.770] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 8003 (http) with context path '/dlu'
+[2023-05-04 17:12:11.772] [main] INFO  com.dlu.dluBack.DluBackApplication: Started DluBackApplication in 1.423 seconds (JVM running for 2.315)
+[2023-05-04 17:12:27.733] [http-nio-8003-exec-1] INFO  o.a.c.c.C.[.[localhost].[/dlu]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-05-04 17:12:27.733] [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+[2023-05-04 17:12:27.737] [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet: Completed initialization in 4 ms
+[2023-05-04 17:31:08.870] [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+[2023-05-04 17:31:12.455] [main] INFO  com.dlu.dluBack.DluBackApplication: Starting DluBackApplication on HuangCF with PID 14228 (E:\java_project\dlu_all\dluBack\target\classes started by 86156 in E:\java_project\dluBack\dluBack)
+[2023-05-04 17:31:12.457] [main] INFO  com.dlu.dluBack.DluBackApplication: No active profile set, falling back to default profiles: default
+[2023-05-04 17:31:13.048] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8003 (http)
+[2023-05-04 17:31:13.053] [main] INFO  o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8003"]
+[2023-05-04 17:31:13.054] [main] INFO  o.a.catalina.core.StandardService: Starting service [Tomcat]
+[2023-05-04 17:31:13.054] [main] INFO  o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.33]
+[2023-05-04 17:31:13.117] [main] INFO  o.a.c.c.C.[.[localhost].[/dlu]: Initializing Spring embedded WebApplicationContext
+[2023-05-04 17:31:13.117] [main] INFO  o.s.web.context.ContextLoader: Root WebApplicationContext: initialization completed in 612 ms
+[2023-05-04 17:31:13.140] [main] INFO  o.s.b.web.servlet.RegistrationBean: Filter crossDomainFilter was not registered (possibly already registered?)
+[2023-05-04 17:31:13.150] [main] INFO  c.d.dluBack.filter.CrossDomainFilter: -----CrossDomainFilter init -------
+[2023-05-04 17:31:13.407] [main] INFO  o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+[2023-05-04 17:31:13.472] [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration: Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2023-05-04 17:31:13.536] [main] INFO  o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-8003"]
+[2023-05-04 17:31:13.550] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 8003 (http) with context path '/dlu'
+[2023-05-04 17:31:13.552] [main] INFO  com.dlu.dluBack.DluBackApplication: Started DluBackApplication in 1.333 seconds (JVM running for 2.208)
+[2023-05-04 17:31:27.510] [http-nio-8003-exec-1] INFO  o.a.c.c.C.[.[localhost].[/dlu]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-05-04 17:31:27.510] [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+[2023-05-04 17:31:27.514] [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet: Completed initialization in 4 ms
+[2023-05-04 18:02:30.213] [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+[2023-05-04 18:02:35.178] [main] INFO  com.dlu.dluBack.DluBackApplication: Starting DluBackApplication on HuangCF with PID 12168 (E:\java_project\dlu_all\dluBack\target\classes started by 86156 in E:\java_project\dluBack\dluBack)
+[2023-05-04 18:02:35.180] [main] INFO  com.dlu.dluBack.DluBackApplication: No active profile set, falling back to default profiles: default
+[2023-05-04 18:02:35.789] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8003 (http)
+[2023-05-04 18:02:35.794] [main] INFO  o.a.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8003"]
+[2023-05-04 18:02:35.794] [main] INFO  o.a.catalina.core.StandardService: Starting service [Tomcat]
+[2023-05-04 18:02:35.795] [main] INFO  o.a.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.33]
+[2023-05-04 18:02:35.858] [main] INFO  o.a.c.c.C.[.[localhost].[/dlu]: Initializing Spring embedded WebApplicationContext
+[2023-05-04 18:02:35.858] [main] INFO  o.s.web.context.ContextLoader: Root WebApplicationContext: initialization completed in 630 ms
+[2023-05-04 18:02:35.879] [main] INFO  o.s.b.web.servlet.RegistrationBean: Filter crossDomainFilter was not registered (possibly already registered?)
+[2023-05-04 18:02:35.889] [main] INFO  c.d.dluBack.filter.CrossDomainFilter: -----CrossDomainFilter init -------
+[2023-05-04 18:02:36.144] [main] INFO  o.s.s.c.ThreadPoolTaskExecutor: Initializing ExecutorService 'applicationTaskExecutor'
+[2023-05-04 18:02:36.212] [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration: Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+[2023-05-04 18:02:36.286] [main] INFO  o.a.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-8003"]
+[2023-05-04 18:02:36.302] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer: Tomcat started on port(s): 8003 (http) with context path '/dlu'
+[2023-05-04 18:02:36.305] [main] INFO  com.dlu.dluBack.DluBackApplication: Started DluBackApplication in 1.372 seconds (JVM running for 2.22)
+[2023-05-04 18:02:45.675] [http-nio-8003-exec-1] INFO  o.a.c.c.C.[.[localhost].[/dlu]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-05-04 18:02:45.675] [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+[2023-05-04 18:02:45.679] [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet: Completed initialization in 4 ms
+[2023-05-04 18:02:45.744] [http-nio-8003-exec-2] INFO  com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+[2023-05-04 18:02:45.844] [http-nio-8003-exec-2] INFO  com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+[2023-05-04 19:35:47.834] [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor: Shutting down ExecutorService 'applicationTaskExecutor'
+[2023-05-04 19:35:47.837] [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+[2023-05-04 19:35:47.845] [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
