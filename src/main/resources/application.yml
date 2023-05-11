@@ -1,0 +1,38 @@
+server:
+  servlet:
+    context-path: /dlu
+  port: 8003
+spring:
+  servlet:
+    multipart:
+#      单个文件大小
+      max-file-size: 1024MB
+#      设置单次请求文件的总大小
+      max-request-size: 10240MB
+#  redis:
+#    host: 127.0.0.1
+#    database: 0
+#    port: 6379
+  thymeleaf:
+    cache: false
+    encoding: utf-8
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dlu?serverTimezone=GMT
+    username: root
+    password: 336699
+
+    hikari:
+      maximum-pool-size: 50
+      connection-test-query: SELECT 1
+mybatis:
+  mapper-locations: classpath:mappers/*.xml
+  type-aliases-package: com.dlu.dluBack.bean
+pagehelper:
+  reasonable: true
+  helper-dialect: mysql
+logging:
+  level:
+    com.dlu.dluBack.mapper: debug
+ftp:
+  server_file_path: E:/java_project/dlu_all/dluBack/src/main/java/com/dlu/dluBack/ftpfile/static/datasets

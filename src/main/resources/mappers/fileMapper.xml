@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dlu.dluBack.mapper.FileMapper">
+
+    <insert id="addFolder" parameterType="fileAttr">
+        insert into fileattr (file_name,userName,create_time,invite_code,last_update_time,size,
+        file_number,progress,is_use,path,type)
+        VALUES(#{file_name},#{userName},now(),#{invite_code},now(),#{size},#{file_number},#{progress},
+        #{is_use},#{path},#{type})
+    </insert>
+
+    <select id="queryFolderByInviteCode" parameterType="string" resultType="fileAttr">
+        select file_name,userName,(DATE_FORMAT(create_time,'%Y-%m-%d %H:%i:%s'))as create_time,
+        invite_code,(DATE_FORMAT(last_update_time,'%Y-%m-%d %H:%i:%s')) as last_upate_time,size,
+        file_number,progress,is_use,path,type from fileattr where invite_code = #{invite_code}
+    </select>
+
+    <select id="queryFolderByFileName" parameterType="string" resultType="fileAttr">
+        select file_name,userName,(DATE_FORMAT(create_time,'%Y-%m-%d %H:%i:%s'))as create_time,
+        invite_code,(DATE_FORMAT(last_update_time,'%Y-%m-%d %H:%i:%s')) as last_upate_time,size,
+        file_number,progress,is_use,path,type from fileattr where invite_code = #{invite_code}
+        and file_name like "%"#{file_name}"%"
+    </select>
+
+    <update id="fileRename" parameterType="string">
+        update fileattr set file_name = #{reName},path = #{newPath} where path = #{path}
+    </update>
+
+    <delete id="deleteFileByPath" parameterType="string">
+        delete from fileattr where path =#{path}
+    </delete>
+
+    <insert id="addLabels" parameterType="cloud_label">
+        insert into cloud_label (labels_name,name,labels_data)
+        VALUES(#{labels_name},#{name},#{labels_data})
+    </insert>
+
+    <select id="queryCloudLabels" parameterType="string" resultType="cloud_label">
+        select * from cloud_label where name = #{name}
+    </select>
+
+    <delete id="delete_cloud_labels" parameterType="string">
+        delete from cloud_label where labels_name = #{labels_name}
+    </delete>
+
+</mapper>

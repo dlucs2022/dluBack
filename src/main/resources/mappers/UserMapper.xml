@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dlu.dluBack.mapper.UserMapper">
+    <select id="getUser" parameterType="string" resultType="User">
+        Select * from user
+        where name = #{name}
+        and password = #{password}
+    </select>
+    <select id="queryInviteCode" resultType="int" parameterType="string">
+        SELECT COUNT(*) FROM user WHERE invite_code = #{code}
+    </select>
+
+    <select id="queryUserName" resultType="int" parameterType="string">
+        SELECT COUNT(*) FROM user WHERE name = #{name}
+    </select>
+    <select id="checkList" resultType="wait_register" parameterType="string">
+        SELECT * FROM wait_register WHERE invite_code = #{code} order by create_time desc
+    </select>
+
+    <select id="queryUserNameFromWait" parameterType="string" resultType="int">
+        SELECT COUNT(*) FROM wait_register WHERE name = #{name}
+    </select>
+
+    <insert id="passUserCheck" parameterType="string">
+        insert into user(name,password,power,invite_code,create_time)
+            (select name,password,"2",invite_code,create_time from wait_register
+            where name = #{name})
+    </insert>
+
+    <update id="update_passUserCheck" parameterType="string">
+        update wait_register set status = '已通过' where name = #{name}
+    </update>
+
+    <select id="queryUserByName" parameterType="string" resultType="user">
+        select * from user where name = #{name}
+    </select>
+
+    <update id="update_refuseCheck" parameterType="string">
+        update wait_register set status = '已拒绝' where name = #{name}
+    </update>
+
+    <delete id="deleteUserByName" parameterType="string">
+        delete from user where name = #{name}
+    </delete>
+
+    <select id="getPassword" parameterType="string" resultType="string">
+        select password from user where name = #{name}
+    </select>
+
+    <update id="updatePassword" parameterType="string" >
+        update user set password = #{password} where name = #{name}
+    </update>
+
+    <insert id="addUser" parameterType="wait_register">
+        insert into user (name,password,power,invite_code,create_time)
+        VALUES(#{name},#{password},"3","",now())
+    </insert>
+
+</mapper>
+
