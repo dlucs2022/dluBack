@@ -35,4 +35,4 @@ logging:
   level:
     com.dlu.dluBack.mapper: debug
 ftp:
-  server_file_path: E:/java_project/dlu_all/dluBack/src/main/java/com/dlu/dluBack/ftpfile/static/datasets
+  server_file_path: E:/java_project/dlu_all/dluBack/ftpfile/static/datasets
