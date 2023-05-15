@@ -5,11 +5,14 @@ import com.dlu.dluBack.bean.FileAttr;
 import com.dlu.dluBack.bean.MultipartFileParam;
 import com.dlu.dluBack.mapper.FileMapper;
 import com.dlu.dluBack.service.FileService;
+import com.dlu.dluBack.utils.DateUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -22,6 +25,7 @@ import java.nio.channels.FileChannel;
 import java.security.AccessController;
 import java.security.PrivilegedAction;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -32,6 +36,7 @@ import java.util.UUID;
  */
 
 @Service
+@Slf4j
 public class FileServiceImpl implements FileService {
 
     @Autowired
@@ -169,6 +174,39 @@ public class FileServiceImpl implements FileService {
     @Override
     public void delete_cloud_labels(String labels_name) {
         fileMapper.delete_cloud_labels(labels_name);
+    }
+
+    @Override
+    public String species_recognition_Without_user(MultipartFile file, String tmp_file) {
+        File folder = new File(tmp_file);
+        String oldName = file.getOriginalFilename();
+        String newName = oldName.split("\\.")[0] + "-" + UUID.randomUUID().toString()+oldName.substring(oldName.lastIndexOf("."));
+        try {
+            file.transferTo(new File(folder,newName));
+            return tmp_file+"/"+newName;
+        }catch (IOException e){
+            log.info(file.getOriginalFilename()+"存储出错:"+ DateUtil.DateToString(new Date()));
+            return null;
+        }
+
+    }
+
+    @Override
+    public String species_recognition(String userName, MultipartFile file, String server_file_path) {
+        String folder =  server_file_path+"/"+userName+"/"+"species_recognition";
+        File folderFile = new File(folder);
+        String oldName = file.getOriginalFilename();
+        String newName = oldName.split("\\.")[0] + "-" + UUID.randomUUID().toString()+oldName.substring(oldName.lastIndexOf("."));
+        if (!folderFile.exists()) {
+            folderFile.mkdirs();
+        }
+        try{
+            file.transferTo(new File(folderFile,newName));
+            return folder+"/"+newName;
+        }catch (IOException e){
+            log.info(file.getOriginalFilename()+"存储出错:"+ DateUtil.DateToString(new Date()));
+            return null;
+        }
     }
 
     // 工具方法：递归删除一个文件夹

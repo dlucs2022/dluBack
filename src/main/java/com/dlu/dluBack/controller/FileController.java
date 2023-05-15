@@ -45,6 +45,9 @@ public class FileController {
     @Value("${ftp.server_file_path}")
     public String server_file_path;
 
+    @Value("${ftp.tmp_file}")
+    public String tmp_file;
+
 
 //    String SINGLE_FOLDER = server_file_path;
     @ApiOperation("大文件分片上传")
@@ -172,5 +175,18 @@ public class FileController {
     public ResultVo delete_cloud_labels(String labels_name){
         fileService.delete_cloud_labels(labels_name);
         return ResultVo.success("success");
+    }
+
+    @ResponseBody
+    @RequestMapping("species_recognition")
+    public ResultVo species_recognition(String userName,MultipartFile file,HttpServletRequest request){
+        String path = "";
+        if ("".equals(userName)){       //用户未登录
+            path = fileService.species_recognition_Without_user(file,tmp_file);
+        }else{
+            path = fileService.species_recognition(userName,file,server_file_path);
+        }
+//
+        return ResultVo.success(path);
     }
 }

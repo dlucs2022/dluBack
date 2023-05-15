@@ -3,6 +3,7 @@ package com.dlu.dluBack.service;
 import com.dlu.dluBack.bean.Cloud_label;
 import com.dlu.dluBack.bean.FileAttr;
 import com.dlu.dluBack.bean.MultipartFileParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -32,4 +33,8 @@ public interface FileService {
     List<Cloud_label> queryCloudLabels(String name);
 
     void delete_cloud_labels(String labels_name);
+
+    String species_recognition_Without_user(MultipartFile file, String tmp_file);
+
+    String species_recognition(String userName, MultipartFile file, String server_file_path);
 }
